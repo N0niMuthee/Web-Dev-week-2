@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <header>
+        <h1>Customer Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#form">Registration Form</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Our Service</h2>
+            <p>We provide excellent services with:</p>
+            <ul>
+                <li>24/7 customer support</li>
+                <li>Secure data handling</li>
+                <li>Fast response times</li>
+            </ul>
+
+            <table border="1">
+                <caption>Service Comparison</caption>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Support</td>
+                        <td>Email only</td>
+                        <td>24/7 phone support</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>5GB</td>
+                        <td>50GB</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="https://via.placeholder.com/400x200?text=Sample+Service+Image" alt="Our service in action" width="400">
+                <figcaption>Our premium service dashboard</figcaption>
+            </figure>
+
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="user@example.com" autocomplete="email">
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 123-456-7890</small>
+                    
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required min="1900-01-01" max="2025-12-31">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="username" autocomplete="username" minlength="4">
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="minimum 8 characters" minlength="8" autocomplete="new-password">
+                    
+                    <label for="website">Website (optional):</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <label>Service Level:</label>
+                    <input type="radio" id="basic" name="service" value="basic" checked>
+                    <label for="basic">Basic</label>
+                    
+                    <input type="radio" id="premium" name="service" value="premium">
+                    <label for="premium">Premium</label>
+                    
+                    <br>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color" value="#4287f5">
+                    
+                    <br>
+                    <label for="volume">Notification Volume:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50">
+                    
+                    <br>
+                    <label for="newsletter">Newsletter Frequency:</label>
+                    <select id="newsletter" name="newsletter">
+                        <option value="daily">Daily</option>
+                        <option value="weekly" selected>Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                    
+                    <br>
+                    <label>Interests:</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech" checked>
+                    <label for="tech">Technology</label>
+                    
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <label for="bio">Biography:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+                    
+                    <label for="avatar">Profile Picture:</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                    
+                    <label for="refid">Reference ID:</label>
+                    <input type="text" id="refid" name="refid" value="CUST-2023-001" readonly>
+                </fieldset>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                <p>Email: <a href="gathonimaureen.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maureen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
